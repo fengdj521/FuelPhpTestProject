@@ -5,6 +5,7 @@ class Controller_Example extends Controller_Template
 
 	public function action_index()
 	{
+		var_dump("こんにちは");exit;
 		$data["subnav"] = array('index'=> 'active' );
 		$this->template->title = 'Example &raquo; Index';
 		$this->template->content = View::forge('example/index', $data);
