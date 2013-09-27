@@ -42,7 +42,7 @@ return array(
 	 *
 	 * Set this to 'index.php if you don't use URL rewriting
 	 */
-	// 'index_file' => false,
+	 'index_file' => false,
 
 	// 'profiling'  => false,
 
@@ -79,8 +79,10 @@ return array(
 	 * Localization & internationalization settings
 	 */
 	// 'language'           => 'en', // Default language
+	 'language'           => 'ja', // Default language
 	// 'language_fallback'  => 'en', // Fallback language when file isn't available for default language
 	// 'locale'             => 'en_US', // PHP set_locale() setting, null to not set
+	 'locale'             => 'ja_JP.UTF-8', // PHP set_locale() setting, null to not set
 
 	/**
 	 * Internal string encoding charset
@@ -95,6 +97,7 @@ return array(
 	 */
 	// 'server_gmt_offset'  => 0,
 	// 'default_timezone'   => null,
+	 'default_timezone'   => 'Asia/Tokyo',
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:
@@ -273,6 +276,9 @@ return array(
 		// 'packages'  => array(
 		// 	//'orm',
 		// ),
+		 'packages'  => array(
+		 	//'orm',
+		 ),
 
 		/**
 		 * These modules are always loaded on Fuel's startup. You can specify them
