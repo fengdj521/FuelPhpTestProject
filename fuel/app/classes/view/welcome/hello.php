@@ -26,6 +26,10 @@ class View_Welcome_Hello extends ViewModel
 	 */
 	public function view()
 	{
-		$this->name = $this->request()->param('name', 'World');
+		Session::set('sessionKey',123456);
+
+// 		$this->name = $this->request()->param('name', Session::get('sessionKey'));
+		$this->name = $this->request()->param('name', Session::key());
+
 	}
 }

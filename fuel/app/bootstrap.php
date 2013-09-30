@@ -11,6 +11,7 @@ require COREPATH.'bootstrap.php';
 Autoloader::add_classes(array(
 	// Add classes you want to override here
 	// Example: 'View' => APPPATH.'classes/view.php',
+	'Log' => APPPATH.'classes/log.php',
 ));
 
 // Register the autoloader
@@ -23,6 +24,7 @@ Autoloader::register();
  * Fuel::TEST
  * Fuel::STAGING
  * Fuel::PRODUCTION
+ * (TEST,?STAGE,?PRODUCTION)
  */
 Fuel::$env = (isset($_SERVER['FUEL_ENV']) ? $_SERVER['FUEL_ENV'] : Fuel::DEVELOPMENT);
 
